@@ -68,7 +68,7 @@ Instead of words, the text will be parsed into bi-grams. According to [Wikipedia
 
 WARNING: This plot was generated from a glmnet model that at the time of publication was performing worse than random chance.  It is likely to change or be discarded entirely!
 
-![glmnet](/plots/ml_glmnet_coef_prob)
+![glmnet](/plots/ml_glmnet_coef_prob.jpg)
 
 # Citation
 
