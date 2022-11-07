@@ -1,4 +1,8 @@
-![treaty](/img/1866-04-28_choctaw_chicasaw_treaty.png)
+
+<figure>
+<img src="https://github.com/RobWiederstein/indian_treaties/blob/main/img/1866-04-28_choctaw_chicasaw_treaty.png" alt="Trulli" style="width:100%">
+<figcaption align = "center"><b>Fig.1 - 4K Mountains Wallpaper</b></figcaption>
+</figure>![treaty](/img/1866-04-28_choctaw_chicasaw_treaty.png)
 
 <!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
@@ -22,6 +26,7 @@
 - [Citation](#citation)   
 
 <!-- /MDTOC -->
+
 # indian_treaties
 
 # 00. Background
