@@ -19,6 +19,8 @@ He grouped the treaties by their legal disposition.  The four groups are (1) val
 
 (Would two categories be more appropriate?  Unratified and rejected treaties have the same legal effect in that they are not binding upon the United States.  Also, valid and ratified agreements are have the same effect in that they bind the US to future action. Does this impact the analysis?)
 
+(Double check the word "shall". It looks like the "l"s may be encoded as "1"s and becoming either "sha 1" or "sha11". The inclusion of many "shall"s within an agreement may make it less likely to pass. The analysis dropped numbers, so it could be impactful.)
+
 # 01. Word Frequencies
 
 One measure of a word's importance is the number of times it appears within a text. This is measured by its term frequency (tf). The treaties were processed using the process described in Text Mining with R. Words were converted to lowercase, punctuation omitted, "stop words" excluded, any word that began with or was a number was omitted, the word "article" was dropped,  and so too were words that were two or fewer characters in length. (There were a lot of lower case roman numerals omitted ("vi") that probably were numbers for the articles.) Each word was counted, grouped by the treaty's legal classification, and then divided by the total number of words for a term frequency.  
