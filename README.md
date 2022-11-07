@@ -5,7 +5,11 @@
 
 This project is a textual analysis of the treaties between the United States and Indigenous People of North America during the years 1784 - 1911. The project relies on the `tidytext` package and its dependencies and follows the book "[Text Mining with R](https://www.tidytextmining.com/tfidf.html)" by Julia Silge and David Robinson. 
 
-This textual analysis is an effort to understand how the language used in treaties correlates with its ultimate legal disposition.  The textual analysis is not intended to minimize, explain, or address the treatment of Indigenous People during the period examined. Journal articles, web pages and treaties use different descriptors when referring to Indigenous People of North America including Indians, Indigenous People, and specific names of tribal nations. The author will refer to the Indigenous People of North America by reference to a specific tribal nation when that information is known, the actual language used in a treaty being disussed, or "Indigenous People." The analysis attempts to use the most inclusive and culturally respectful term. 
+## Scope
+
+This textual analysis is an effort to understand how the language used in treaties correlates with its ultimate legal disposition.  The textual analysis is not intended to minimize, explain, or address the treatment of Indigenous People during the period examined. Journal articles, web pages and treaties use different descriptors over time when referring to Indigenous People of North America including Indians, Indigenous People, and specific names of tribal nations. The author will refer to the Indigenous People of North America by reference to a specific tribal nation when that information is known, the actual language used in a treaty being discussed, or "Indigenous People." The analysis attempts to use the most inclusive and culturally respectful term. 
+
+## Dataset
 
 The dataset encompasses 595 treaties between the United States and Indigenous Peoples and was first published in digital form by Professor Arthur Spirling. His article, cited below, "US treaty making with American Indians: Institutional change and relative power, 1784–1911" analyzed the dataset.  Of particular interest to Spirling was how treaty approval was impacted when Congress overtook the treaty power from the President in 1871.
 
@@ -25,11 +29,11 @@ Plot 1 is created following the methodology described in [Text Mining with R-Cha
 
 ![Treaty Word Frequency](/plots/valid_vs_rejected.png "US-Indian Treaty Word Frequency")
 
-Words that are close to the dashed, diagonal line in these plots appear with similar frequency in both sets of texts.  For example, the word "united" is at the upper-frequency end and it appears in equal proportions in all of the datasets.  This makes sense as "united" is likely one of the parties to the treaties as in the "United States." Words that are far from the line are words that are found more in one set of documents than another. For example, in the "Ratified (ACUT)" panel, words like "warrior“ and "peace" are found in valid and operable (VCUT) agreements, but not as much in ratified (ACUT) documents. Additional plots are available for the [ratified](/plots/valid_vs_ratified.png) and [unratified](/plots/valid_vs_unratified.png).
+Words that are close to the dashed, diagonal line in these plots appear with similar frequency in both sets of texts.  For example, the word "united" is at the upper-frequency end and it appears in equal proportions in all of the datasets.  This makes sense as "united" is likely one of the parties to the treaties as in the "United States." Words that are far from the line are words that are found more in one set of documents than another. For example, in the "Valid" panel, words like "confederated“ and "clark" are found in valid and operable (VCUT) agreements, but not as much in "Rejected" (RCUT) documents. Additional plots are available for the [ratified](/plots/valid_vs_ratified.png) and [unratified](/plots/valid_vs_unratified.png).
 
 # 02. Sentiment Analysis
 
-The sentiment analysis relies on a sentiment lexicon where words have been paired with their positive or negative connotation. For example, "abandon" is considered to be a negative word and receives a -2 score, according to the AFINN lexicon/dictionary.  One reluctance in applying a sentiment lexicon to US-Indian treaties is that the dictionary is modern while the treaties are historic. Silge and Robinson addressed this concern in the context of historic fiction.  They state:
+The sentiment analysis relies on a sentiment lexicon where words have been paired with their positive or negative connotation. For example, "abandon" is considered to be a negative word and receives a -2 score, according to the AFINN lexicon/dictionary.  One reluctance in applying a sentiment lexicon to the treaties is that the dictionary is modern while the treaties are historic. Silge and Robinson addressed this concern in the context of historic fiction.  They state:
 
 >we may hesitate to apply these sentiment lexicons to styles of text dramatically different from what they were validated on, such as narrative fiction from 200 years ago. While it is true that using these sentiment lexicons with, for example, Jane Austen’s novels may give us less accurate results than with tweets sent by a contemporary writer, we still can measure the sentiment content for words that are shared across the lexicon and the text.
 
@@ -44,7 +48,7 @@ The treaty with the highest sentiment score of +110 was `V0351.txt` This treaty'
 # 03. tf-idf
 
 
-"tf-idf" is short for term frequency–inverse document frequency. A second  approach in textual analysis is to look at a term’s inverse document frequency (idf). The *idf* is a measure that decreases the weight of commonly used words and increases the weight of infrequently used words within a document. When used upon works of literature, the characters' proper names are revealed with the tf-idf analysis.
+"tf-idf" is short for term frequency–inverse document frequency. A second  approach in textual analysis is to look at a term’s inverse document frequency (idf). The *idf* is a measure that decreases the weight of commonly used words and increases the weight of infrequently used words within a document. When used upon works of literature, the characters' proper names are revealed with the tf-idf analysis. Using a "tf-idf" approach on the treaties reveals more unique words with many tribes' names present.
 
 # What words have the highest tf-idf by class?
 
