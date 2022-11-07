@@ -1,3 +1,4 @@
+![treaty](/img/1866-04-28_choctaw_chicasaw_treaty.png)
 
 <!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
@@ -8,15 +9,20 @@
 - [01. Word Frequencies](#01-word-frequencies)   
    - [Does word frequency differ between rejected and valid treaties?](#does-word-frequency-differ-between-rejected-and-valid-treaties)   
 - [02. Sentiment Analysis](#02-sentiment-analysis)   
+   - [What was the overall sentiment of a treaty?](#what-was-the-overall-sentiment-of-a-treaty)   
 - [03. tf-idf](#03-tf-idf)   
-- [What words have the highest tf-idf by class?](#what-words-have-the-highest-tf-idf-by-class)   
+   - [What words have the highest tf-idf by class?](#what-words-have-the-highest-tf-idf-by-class)   
 - [04. N-grams](#04-n-grams)   
    - [What bigrams have the highest tf-idf by class?](#what-bigrams-have-the-highest-tf-idf-by-class)   
 - [05. LDA Implementation](#05-lda-implementation)   
+   - [What words did the LDA algorithm discover?](#what-words-did-the-lda-algorithm-discover)   
 - [06. Machine Learning with `glmnet`](#06-machine-learning-with-glmnet)   
+   - [What coefficients were identified with a treaty's passage?](#what-coefficients-were-identified-with-a-treatys-passage)   
+- [Resources](#resources)   
 - [Citation](#citation)   
 
-<!-- /MDTOC --># indian_treaties
+<!-- /MDTOC -->
+# indian_treaties
 
 # 00. Background
 
@@ -99,9 +105,15 @@ WARNING: This plot was generated from a glmnet model that at the time of publica
 
 ![glmnet](/plots/ml_glmnet_coef_prob.jpg)
 
+# Resources
+
+- [National Archives - American Indian Treaties](https://www.archives.gov/research/native-americans/treaties)
+
+- [Rights of Native Americans](http://recordsofrights.org/themes/4/rights-of-native-americans)
+
 # Citation
 
-- Sigle, J., Hvitfeldt, E. (2021). [Supervised Machine Learning for Text Analysis in R](https://smltar.com). United Kingdom: CRC Press.
+- Sigle, J., Hvitfeldt, E. (2021). [Supervised Machine Learning for Text Analysis in R](https://smltar.com). United Kingdom: CRC Press.
 
 - Silge J, Robinson D (2016). “tidytext: Text Mining and Analysis Using Tidy
 Data Principles in R.” _JOSS_, *1*(3). doi: 10.21105/joss.00037 (URL:
