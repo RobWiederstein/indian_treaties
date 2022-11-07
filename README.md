@@ -1,7 +1,7 @@
 
 <figure>
 <img src="https://github.com/RobWiederstein/indian_treaties/blob/main/img/1866-04-28_choctaw_chicasaw_treaty.png" alt="Trulli" style="width:100%">
-<figcaption align = "center"><b>Treaty signed April 28, 1866, between the Choctaw and Chicsaw Nations and the United States.</b></figcaption>
+<figcaption align = "center"><b>Treaty signed April 28, 1866, between the Choctaw and Chicsaw Nations and the United States. Furnished courtesy of the National Archives, Washington D.C.</b></figcaption>
 </figure>
 <br>
 <hr>
