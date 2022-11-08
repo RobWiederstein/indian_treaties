@@ -114,9 +114,13 @@ WARNING: This plot was generated from a glmnet model that at the time of publica
 
 # Resources
 
+- [AJPS Treaties Replication - Github Repo](https://github.com/ArthurSpirling/AJPS_Treaties_Replication)
+
 - [National Archives - American Indian Treaties](https://www.archives.gov/research/native-americans/treaties)
 
 - [Rights of Native Americans](http://recordsofrights.org/themes/4/rights-of-native-americans)
+
+- [Tribal Treaties Database](https://treaties.okstate.edu)
 
 # Citation
 
